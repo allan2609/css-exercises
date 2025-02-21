@@ -17,7 +17,8 @@
   padding: 0;
   margin: 0;
   background-color: rgb(99, 97, 97);
-
+  animation: bounce 1s ease-in-out;
+  transform-origin: top;
   display: none;
 }
 
@@ -30,3 +31,8 @@ ul.dropdown-menu li:hover {
 }
 
 
+@keyframes bounce {
+  0% { transform: scaleY(0); }
+  85% { transform: scaleY(1.15); }
+  100% { transform: scaleY(1); }
+}
